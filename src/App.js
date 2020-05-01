@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +14,7 @@ function App() {
       </header>
       <div className="bottomText">
         <p>
-          yhden henkilön yritys Oy on liikeyritys takana näiden verkkosivustojen
+          yhden henkilön yritys Oy on liikeyritys näiden verkkosivustojen takana
         </p>
         <div className="sitesList">
           <ul>
@@ -24,10 +26,11 @@ function App() {
             <li><a href="https://link-in-profile.com/" alt="Link-In-Profile.com/">link-in-profile.com</a></li>
           </ul>
         </div>
-        <p>jös sulla on jotain sanoa, GDPR/DMCA toivomus, tai muuta, lähetä mulle viesti <a href='mailto:contact@yhy.fi' alt="mail">contact@yhy.fi</a></p>
+        <p>jös sulla on GDPR/DMCA toivomus, tai erikoinen kysymys, lähetä mulle viesti <a href='mailto:contact@yhy.fi' alt="mail">contact@yhy.fi</a></p>
+        <p>ohjata kaikki laskutuskysymykset osoitteeseen <a href='mailto:billing@yhy.fi' alt="mail">billing@yhy.fi</a></p>
       </div>
       <footer className="appFooter">
-        <p>©2020 yhy.fi/</p>
+        <p>©{year} yhy.fi/</p>
       </footer>
     </div>
   );
